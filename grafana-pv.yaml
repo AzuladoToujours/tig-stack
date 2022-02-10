@@ -1,13 +1,13 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: influxdb-pv-volume
+  name: grafana-pv-volume
   labels:
     type: local
 spec:
   storageClassName: longhorn
   capacity:
-    storage: 2Gi
+    storage: 1Gi
   accessModes:
     - ReadWriteOnce
 
