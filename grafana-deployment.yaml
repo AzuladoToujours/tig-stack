@@ -31,7 +31,7 @@ spec:
         - mountPath: /etc/grafana/provisioning/datasources/influxdb.yaml
           name: grafana-provisioning-datasources
           subPath: influxdb.yaml
-        - mountPath: /var/lib/grafana/dashboards
+        - mountPath: /var/lib/grafana
           name: grafana-data
       restartPolicy: Always
       volumes:

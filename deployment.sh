@@ -13,8 +13,7 @@ kubectl apply -f telegraf-deployment.yaml
 echo "Awaiting 5 seconds for Grafana deployment..."
 sleep 5
 echo "Deploying GRAFANA..."
-sh grafana-config.yaml
-kubectl apply -f grafana-pv.yaml
+sh grafana-config.sh
 kubectl apply -f grafana-pvc.yaml
 kubectl apply -f grafana-deployment.yaml
 echo "Deployment completed."
